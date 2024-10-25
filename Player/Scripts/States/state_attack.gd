@@ -11,6 +11,7 @@ var attacking: bool  = false
 
 
 
+
 func _Enter() -> void:
 	player._UpdateAnimation("attack")
 	attack_anim.play("attack_" + player._AnimDirection())
