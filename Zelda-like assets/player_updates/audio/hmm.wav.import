@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cey3ak4u62n3l"
+path="res://.godot/imported/hmm.wav-6f8a47eb8189e2a53458100887d97a92.sample"
+
+[deps]
+
+source_file="res://Zelda-like assets/player_updates/audio/hmm.wav"
+dest_files=["res://.godot/imported/hmm.wav-6f8a47eb8189e2a53458100887d97a92.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
