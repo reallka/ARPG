@@ -5,7 +5,7 @@ var attacking: bool  = false
 @onready var animation_player: AnimationPlayer = $"../../AnimationPlayer"
 @onready var idle: State_Idle = $"../Idle"
 @onready var attack_anim: AnimationPlayer = $"../../Sprite2D/AttackEffectSprite/AnimationPlayer"
-@onready var audio_stream_player_2d: AudioStreamPlayer2D = $"../../AudioStreamPlayer2D"
+@onready var audio_stream_player_2d: AudioStreamPlayer2D = $"../../Audio/AudioStreamPlayer2D"
 @export_range(1,20,0.5) var decelerate_speed : float = 5.0
 @onready var hurt_box: HurtBox = $"../../Interactions/HurtBox"
 

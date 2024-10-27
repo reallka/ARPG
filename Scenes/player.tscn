@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://ct4ayfcjkm0s4"]
+[gd_scene load_steps=43 format=3 uid="uid://ct4ayfcjkm0s4"]
 
 [ext_resource type="Script" path="res://Player/Scripts/player.gd" id="1_iw4lo"]
 [ext_resource type="Texture2D" uid="uid://cf6yugo5chg6a" path="res://Zelda-like assets/PlayerSprite02.png" id="2_wjqxp"]
@@ -9,6 +9,7 @@
 [ext_resource type="Script" path="res://Player/Scripts/States/state_walk.gd" id="5_2iniq"]
 [ext_resource type="Script" path="res://Player/Scripts/States/state_attack.gd" id="6_b18an"]
 [ext_resource type="Script" path="res://00_Global/PlayerCamera.gd" id="8_ejb6c"]
+[ext_resource type="Script" path="res://Player/Scripts/States/state_stun.gd" id="9_mti0s"]
 [ext_resource type="PackedScene" uid="uid://d0k63ian7unwu" path="res://Player/Audio/audio_stream_player_2d.tscn" id="10_jtt7i"]
 [ext_resource type="PackedScene" uid="uid://cm1oyxuuhmjto" path="res://GeneralNodes/HurtBox/hurt_box.tscn" id="11_mldko"]
 [ext_resource type="Script" path="res://Player/Scripts/PlayerInteractionsHost.gd" id="11_xap1a"]
@@ -589,6 +590,9 @@ script = ExtResource("5_2iniq")
 [node name="Attack" type="Node" parent="StateMachine"]
 script = ExtResource("6_b18an")
 
+[node name="Stun" type="Node" parent="StateMachine"]
+script = ExtResource("9_mti0s")
+
 [node name="Camera2D" type="Camera2D" parent="."]
 scale = Vector2(46.8959, 0.0904964)
 editor_draw_limits = true
@@ -615,6 +619,7 @@ debug_color = Color(1, 0.00483834, 0.0633506, 0.42)
 
 [node name="HitBox" parent="." instance=ExtResource("13_tptbw")]
 position = Vector2(0, 9)
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox"]
 shape = SubResource("CircleShape2D_jbngs")
