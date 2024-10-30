@@ -1,0 +1,62 @@
+[gd_scene load_steps=4 format=3 uid="uid://dehx84smdmt54"]
+
+[ext_resource type="Script" path="res://GUI/Player_HUD/player_hud.gd" id="1_ndpfw"]
+[ext_resource type="Texture2D" uid="uid://d30cqohrmlxg5" path="res://GUI/Player_HUD/gui-health.png" id="2_10tn7"]
+[ext_resource type="PackedScene" uid="uid://bixpwo56lc2kl" path="res://Scenes/heart_gui.tscn" id="3_utn08"]
+
+[node name="PlayerHud" type="CanvasLayer"]
+script = ExtResource("1_ndpfw")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="Control"]
+position = Vector2(27.25, 9.25)
+scale = Vector2(1.47143, 1.72222)
+texture = ExtResource("2_10tn7")
+region_enabled = true
+region_rect = Rect2(28, 0, 35, 9)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 17.0
+offset_right = 64.0
+offset_bottom = 27.0
+theme_override_constants/separation = 4
+
+[node name="Heart" parent="Control/HBoxContainer" instance=ExtResource("3_utn08")]
+layout_mode = 2
+
+[node name="Heart2" parent="Control/HBoxContainer" instance=ExtResource("3_utn08")]
+layout_mode = 2
+
+[node name="Heart3" parent="Control/HBoxContainer" instance=ExtResource("3_utn08")]
+layout_mode = 2
+
+[node name="Heart4" parent="Control/HBoxContainer" instance=ExtResource("3_utn08")]
+layout_mode = 2
+
+[node name="Heart5" parent="Control/HBoxContainer" instance=ExtResource("3_utn08")]
+layout_mode = 2
+
+[node name="Heart6" parent="Control/HBoxContainer" instance=ExtResource("3_utn08")]
+layout_mode = 2
+
+[node name="Heart7" parent="Control/HBoxContainer" instance=ExtResource("3_utn08")]
+layout_mode = 2
+
+[node name="Heart8" parent="Control/HBoxContainer" instance=ExtResource("3_utn08")]
+layout_mode = 2
+
+[node name="Heart9" parent="Control/HBoxContainer" instance=ExtResource("3_utn08")]
+layout_mode = 2
+
+[node name="Heart10" parent="Control/HBoxContainer" instance=ExtResource("3_utn08")]
+layout_mode = 2
