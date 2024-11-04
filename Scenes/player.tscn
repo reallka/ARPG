@@ -1,7 +1,7 @@
 [gd_scene load_steps=43 format=3 uid="uid://ct4ayfcjkm0s4"]
 
 [ext_resource type="Script" path="res://Player/Scripts/player.gd" id="1_iw4lo"]
-[ext_resource type="Texture2D" uid="uid://cf6yugo5chg6a" path="res://Zelda-like assets/PlayerSprite02.png" id="2_wjqxp"]
+[ext_resource type="Texture2D" uid="uid://cf6yugo5chg6a" path="res://Player/Player_Sprites/PlayerSprite02.png" id="2_wjqxp"]
 [ext_resource type="Script" path="res://Player/Scripts/player_state_machine.gd" id="3_0wjiw"]
 [ext_resource type="Texture2D" uid="uid://clq5lcn0r6gye" path="res://Zelda-like assets/AttackSprite01.png" id="3_3eqba"]
 [ext_resource type="Script" path="res://Player/Scripts/States/state_idle.gd" id="4_0768j"]
@@ -542,7 +542,9 @@ _data = {
 }
 
 [node name="Player" type="CharacterBody2D"]
+z_index = 1
 position = Vector2(225, 133)
+collision_mask = 17
 script = ExtResource("1_iw4lo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

@@ -22,7 +22,7 @@ func update_hp ( _hp: int , _max_hp: int ) -> void:
 
 func update_heart( _index : int, _hp: int ) -> void:
 	var _value : int = clampi( _hp - _index * 2, 0, 2)
-	hearts[_index].value = _value
+	hearts[ _index ].value = _value
 	pass
 	
 func update_max_hp( _max_hp: int ) -> void:
