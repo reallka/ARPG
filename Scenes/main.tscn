@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://dysdl4beba3qn"]
+[gd_scene load_steps=7 format=3 uid="uid://dysdl4beba3qn"]
 
 [ext_resource type="Script" path="res://Levels/Scripts/level.gd" id="1_b2mp6"]
 [ext_resource type="PackedScene" uid="uid://ojltikrfm7r6" path="res://TileMaps/grass-01.tscn" id="1_cnrju"]
 [ext_resource type="PackedScene" uid="uid://b8cd53l6glfje" path="res://Props/Plants/Plant.tscn" id="3_7udt8"]
 [ext_resource type="PackedScene" uid="uid://dpeqqvcrhcl8d" path="res://Enemies/Slime/Slime.tscn" id="4_ff2h8"]
 [ext_resource type="PackedScene" uid="uid://bnmr43ew0qx2c" path="res://Levels/player_spawn.tscn" id="4_w7jdy"]
+[ext_resource type="PackedScene" uid="uid://dle44l4rs1ro" path="res://Levels/LevelTransition.tscn" id="6_51rid"]
 
 [node name="Main" type="Node2D"]
 y_sort_enabled = true
@@ -66,3 +67,7 @@ position = Vector2(495, 314)
 
 [node name="PlayerSpawn" parent="." instance=ExtResource("4_w7jdy")]
 position = Vector2(320, 115)
+
+[node name="LevelTransition" parent="." instance=ExtResource("6_51rid")]
+position = Vector2(707, 303)
+level = "res://Levels/area_1/01.tscn"
