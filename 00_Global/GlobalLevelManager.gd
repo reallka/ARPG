@@ -35,7 +35,7 @@ func load_new_level(
 	
 	get_tree().change_scene_to_file( level_path )
 	
-	get_tree().paused = true
+	get_tree().paused = false
 	
 	await get_tree().process_frame # Level Transition
 	
