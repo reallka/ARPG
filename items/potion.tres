@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=4 format=3 uid="uid://e6vff2fck5w1"]
+
+[ext_resource type="Script" path="res://items/Scripts/item_data.gd" id="1_efpga"]
+[ext_resource type="Texture2D" uid="uid://bob8pixiwin32" path="res://items/Sprites/items.png" id="2_jfx37"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_27laa"]
+atlas = ExtResource("2_jfx37")
+region = Rect2(32, 0, 32, 32)
+
+[resource]
+script = ExtResource("1_efpga")
+name = "Potion"
+description = "This restores your health."
+texture = SubResource("AtlasTexture_27laa")
