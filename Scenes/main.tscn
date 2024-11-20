@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dysdl4beba3qn"]
+[gd_scene load_steps=11 format=3 uid="uid://dysdl4beba3qn"]
 
 [ext_resource type="Script" path="res://Levels/Scripts/level.gd" id="1_b2mp6"]
 [ext_resource type="PackedScene" uid="uid://ojltikrfm7r6" path="res://TileMaps/grass-01.tscn" id="1_cnrju"]
@@ -6,6 +6,10 @@
 [ext_resource type="PackedScene" uid="uid://dpeqqvcrhcl8d" path="res://Enemies/Slime/Slime.tscn" id="4_ff2h8"]
 [ext_resource type="PackedScene" uid="uid://bnmr43ew0qx2c" path="res://Levels/player_spawn.tscn" id="4_w7jdy"]
 [ext_resource type="PackedScene" uid="uid://c4p7k3xbyxxy" path="res://Levels/level_transition.tscn" id="6_51rid"]
+[ext_resource type="PackedScene" uid="uid://bp2lcytnrf16t" path="res://items/item_pickup/item_pickup.tscn" id="7_4jmau"]
+[ext_resource type="Resource" uid="uid://cus2dqc5s0n7i" path="res://items/gem.tres" id="8_0cgv2"]
+[ext_resource type="Resource" uid="uid://netd3jdtcog2" path="res://items/stone.tres" id="9_6n0pq"]
+[ext_resource type="Resource" uid="uid://e6vff2fck5w1" path="res://items/potion.tres" id="10_hd5h2"]
 
 [node name="Main" type="Node2D"]
 y_sort_enabled = true
@@ -73,3 +77,27 @@ position = Vector2(672, 304)
 level = "res://Levels/area_1/01.tscn"
 size = 5
 side = 1
+
+[node name="ItemPickup" parent="." instance=ExtResource("7_4jmau")]
+position = Vector2(284, 140)
+item_data = ExtResource("8_0cgv2")
+
+[node name="ItemPickup2" parent="." instance=ExtResource("7_4jmau")]
+position = Vector2(298, 272)
+item_data = ExtResource("9_6n0pq")
+
+[node name="ItemPickup3" parent="." instance=ExtResource("7_4jmau")]
+position = Vector2(47, 323)
+item_data = ExtResource("10_hd5h2")
+
+[node name="ItemPickup4" parent="." instance=ExtResource("7_4jmau")]
+position = Vector2(188, 80)
+item_data = ExtResource("8_0cgv2")
+
+[node name="ItemPickup5" parent="." instance=ExtResource("7_4jmau")]
+position = Vector2(55, 146)
+item_data = ExtResource("8_0cgv2")
+
+[node name="ItemPickup6" parent="." instance=ExtResource("7_4jmau")]
+position = Vector2(-71, 174)
+item_data = ExtResource("10_hd5h2")

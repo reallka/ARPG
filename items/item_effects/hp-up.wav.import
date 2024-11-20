@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dn3dlwxn80cmk"
-path="res://.godot/imported/hp-up.wav-a637cecf288e4c82f4ea4bec3a00ca2c.sample"
+path="res://.godot/imported/hp-up.wav-2660d0c83d6b7930d0bf14b33024a9e0.sample"
 
 [deps]
 
-source_file="res://Zelda-like assets/hp-up.wav"
-dest_files=["res://.godot/imported/hp-up.wav-a637cecf288e4c82f4ea4bec3a00ca2c.sample"]
+source_file="res://items/item_effects/hp-up.wav"
+dest_files=["res://.godot/imported/hp-up.wav-2660d0c83d6b7930d0bf14b33024a9e0.sample"]
 
 [params]
 
