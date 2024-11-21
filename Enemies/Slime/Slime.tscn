@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://dpeqqvcrhcl8d"]
+[gd_scene load_steps=38 format=3 uid="uid://dpeqqvcrhcl8d"]
 
 [ext_resource type="Script" path="res://Enemies/Scripts/enemy.gd" id="1_2jpot"]
 [ext_resource type="Texture2D" uid="uid://bhmqeqybtllfg" path="res://Assest ARPG/Slime.png" id="1_ramt1"]
@@ -11,8 +11,15 @@
 [ext_resource type="AudioStream" uid="uid://x5e8wa6338xy" path="res://Assest ARPG/hit_01.wav" id="8_rhmap"]
 [ext_resource type="AudioStream" uid="uid://djaq7vdfbc81c" path="res://Assest ARPG/hit_00.wav" id="9_x1iwi"]
 [ext_resource type="Script" path="res://Enemies/Scripts/States/enemy_destroy_state.gd" id="10_db5m3"]
+<<<<<<< HEAD
 [ext_resource type="Texture2D" uid="uid://nw51bdf748ru" path="res://Assest ARPG/DestroySmoke.png" id="10_ujvkb"]
+=======
+[ext_resource type="Texture2D" uid="uid://nw51bdf748ru" path="res://Zelda-like assets/DestroySmoke.png" id="10_ujvkb"]
+[ext_resource type="Script" path="res://Enemies/Scripts/drop_data.gd" id="11_gpfib"]
+>>>>>>> 8686510dc5ae85724c4cc8cec43a6906457b55f3
 [ext_resource type="PackedScene" uid="uid://b4raekkstrtla" path="res://GeneralNodes/Hitbox/hit_box.tscn" id="12_a2jkk"]
+[ext_resource type="Resource" uid="uid://cus2dqc5s0n7i" path="res://items/gem.tres" id="12_uxouq"]
+[ext_resource type="Resource" uid="uid://e6vff2fck5w1" path="res://items/potion.tres" id="13_ixjbo"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3wa32"]
 radius = 13.0384
@@ -659,6 +666,20 @@ _data = {
 "walk_up": SubResource("Animation_m0x7s")
 }
 
+[sub_resource type="Resource" id="Resource_h5m6b"]
+script = ExtResource("11_gpfib")
+item = ExtResource("12_uxouq")
+probability = 100.0
+min_amount = 1
+max_amount = 4
+
+[sub_resource type="Resource" id="Resource_wvbyx"]
+script = ExtResource("11_gpfib")
+item = ExtResource("13_ixjbo")
+probability = 20.0
+min_amount = 1
+max_amount = 1
+
 [sub_resource type="Animation" id="Animation_eg7jw"]
 length = 0.001
 tracks/0/type = "value"
@@ -781,6 +802,7 @@ next_state = NodePath("../Idle")
 
 [node name="Destroy" type="Node" parent="EnemyStateMachine"]
 script = ExtResource("10_db5m3")
+drops = Array[ExtResource("11_gpfib")]([SubResource("Resource_h5m6b"), SubResource("Resource_wvbyx")])
 
 [node name="StunSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("8_rhmap")
