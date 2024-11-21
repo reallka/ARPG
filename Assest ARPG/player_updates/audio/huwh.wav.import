@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cfvd44gey00yt"
+path="res://.godot/imported/huwh.wav-e9d3d3b721216f8d3c1e9592244a5412.sample"
+
+[deps]
+
+source_file="res://Assest ARPG/player_updates/audio/huwh.wav"
+dest_files=["res://.godot/imported/huwh.wav-e9d3d3b721216f8d3c1e9592244a5412.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

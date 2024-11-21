@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://doe1sp6exlw0g"
+path="res://.godot/imported/lever-02.wav-597d3b22a937ac437c824099f36cd3ff.sample"
+
+[deps]
+
+source_file="res://Assest ARPG/lever-02.wav"
+dest_files=["res://.godot/imported/lever-02.wav-597d3b22a937ac437c824099f36cd3ff.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

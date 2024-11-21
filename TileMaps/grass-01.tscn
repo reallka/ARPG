@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://ojltikrfm7r6"]
 
-[ext_resource type="Texture2D" uid="uid://dpkkfu6bej3dr" path="res://Zelda-like assets/Grass-01.png" id="1_cb4d2"]
+[ext_resource type="Texture2D" uid="uid://dpkkfu6bej3dr" path="res://Assest ARPG/Grass-01.png" id="1_cb4d2"]
 [ext_resource type="Script" path="res://TileMaps/LevelTileMap.gd" id="2_2tcfr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_atq0e"]

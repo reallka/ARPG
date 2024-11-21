@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cxox5k5johb1u"
+path="res://.godot/imported/unlock_door.wav-d3731577fea0e7bb51c62cd91c3b2e86.sample"
+
+[deps]
+
+source_file="res://Assest ARPG/unlock_door.wav"
+dest_files=["res://.godot/imported/unlock_door.wav-d3731577fea0e7bb51c62cd91c3b2e86.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

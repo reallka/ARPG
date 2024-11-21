@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dnche5lou5xsn"
+path="res://.godot/imported/boomerang.wav-4d99b3338c44b382fd4746a4b60d9be0.sample"
+
+[deps]
+
+source_file="res://Assest ARPG/boomerang.wav"
+dest_files=["res://.godot/imported/boomerang.wav-4d99b3338c44b382fd4746a4b60d9be0.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

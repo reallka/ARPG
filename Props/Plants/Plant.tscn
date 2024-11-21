@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://b8cd53l6glfje"]
 
 [ext_resource type="Script" path="res://Props/Plants/plant.gd" id="1_chvnj"]
-[ext_resource type="Texture2D" uid="uid://cn0vi34wpa15h" path="res://Zelda-like assets/Props.png" id="2_e24rm"]
+[ext_resource type="Texture2D" uid="uid://cn0vi34wpa15h" path="res://Assest ARPG/Props.png" id="2_e24rm"]
 [ext_resource type="PackedScene" uid="uid://b4raekkstrtla" path="res://GeneralNodes/Hitbox/hit_box.tscn" id="3_qpp08"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8d7gl"]

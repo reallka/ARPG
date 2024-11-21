@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://d0k63ian7unwu"]
 
-[ext_resource type="AudioStream" uid="uid://cr5kxnye0yepv" path="res://Zelda-like assets/SwordSwoosh.wav" id="1_h214x"]
+[ext_resource type="AudioStream" uid="uid://cr5kxnye0yepv" path="res://Assest ARPG/SwordSwoosh.wav" id="1_h214x"]
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D"]
 position = Vector2(2, 6)
